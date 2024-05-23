@@ -5,6 +5,7 @@ const requestBody = {
 	"name": "Modified"
 }
 
+// This first PUT test checks that the response status returns code 200
 test('Status code should be 200', async () => {
     let actualStatusCode
 	try {
@@ -22,6 +23,7 @@ test('Status code should be 200', async () => {
 	expect(actualStatusCode).toBe(200)
 });
 
+// This second PUT test checks that a specific key and value pair are present in the response body
 test('Check for "ok": true in response body', async () => {
     let actualResponseBody
 	try {

@@ -14,6 +14,7 @@ const requestBody = {
 	]
 }
 
+// This first POST test checks that the response status returns code 200
 test('Status code should be 200', async () => {
     let actualStatusCode;
 	try {
@@ -32,7 +33,7 @@ test('Status code should be 200', async () => {
 	expect(actualStatusCode).toBe(200);
 });
 
-
+// This second POST test checks that the boolean in the response body of the specific warehouse is 'true'
 test('Check for boolean response to be true', async () => {
     let actualResponseBody
 	let everythingYouNeed
